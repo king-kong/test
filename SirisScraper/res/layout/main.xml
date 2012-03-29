@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/LearnIDLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="39dp"
+            android:text="@string/learnID" />
+
+        <EditText
+            android:id="@+id/LearnID"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/LearnIDLabel"
+            android:layout_alignBottom="@+id/LearnIDLabel"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/LearnIDLabel"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/PasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LearnIDLabel"
+            android:layout_below="@+id/LearnID"
+            android:layout_marginTop="50dp"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/PasswordLabel"
+            android:layout_alignLeft="@+id/LearnID"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/PasswordLabel"
+            android:layout_below="@+id/PasswordLabel"
+            android:layout_marginTop="40dp"
+            android:onClick="onClickSubmit"
+            android:text="@string/submitButton" />
+
+    </RelativeLayout>
+
+</LinearLayout>
